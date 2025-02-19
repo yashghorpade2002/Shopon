@@ -1,0 +1,50 @@
+﻿@model Shopon.Common.Models.Product
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container">
+    <div class="row">
+        @if (ViewBag.ErrorMessage == null && Model != null)
+        {
+            <div class="col-md-6 col-sm-12">
+                <img src="~/@Url.Content(Model.ImageUrl)" alt=@Model.Name />
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h3>@Model.Name</h3>
+                <p>
+                    <span class="inr"></span>
+                    <label class="price">@Model.Price</label>
+                </p>
+                <label class="my-2">Company: @Model.Company.CompanyName</label>
+                <br />
+                <label class="my-2">Category: @Model.Categories.category_Name</label>
+                <div class="star-rating my-2">
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        if (i <= @Model.Ratings.ratings)
+                        {
+                            <i class="fas fa-star"></i>
+                        }
+                        else
+                        {
+                            <i class="far fa-star"></i>
+                        }
+                    }
+                </div>
+                <div class="my-4">
+                    <a class="btn btn-outline-dark" asp-controller="Cart" asp-action="AddToCart" asp-route-pid="@Model.Id">Add to Cart</a>
+                    <a class="btn btn-outline-danger" asp-controller="Cart" asp-action="Buy Now" asp-route-pid="@Model.Id">Buy Now</a>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="col">
+                <label class="text-danger">@ViewBag.ErrorMessage</label>
+            </div>
+        }
+    </div>
+</div>
+<hr />
+<a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">Continue Shopping</a>

@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91F0F8DE-3D5A-4F6D-A3D5-3678B549EBB8}|Shopon.ADO\\Shopon.ADO.csproj|d:\\trainings_loki\\dot_net_training\\shopon\\shopon.ado\\orderadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F0F8DE-3D5A-4F6D-A3D5-3678B549EBB8}|Shopon.ADO\\Shopon.ADO.csproj|solutionrelative:shopon.ado\\orderadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F0F8DE-3D5A-4F6D-A3D5-3678B549EBB8}|Shopon.ADO\\Shopon.ADO.csproj|d:\\trainings_loki\\dot_net_training\\shopon\\shopon.ado\\productadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F0F8DE-3D5A-4F6D-A3D5-3678B549EBB8}|Shopon.ADO\\Shopon.ADO.csproj|solutionrelative:shopon.ado\\productadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FB76451-6178-4FCA-A94B-9001E2216966}|Shopon.WebApp\\Shopon.WebApp.csproj|d:\\trainings_loki\\dot_net_training\\shopon\\shopon.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FB76451-6178-4FCA-A94B-9001E2216966}|Shopon.WebApp\\Shopon.WebApp.csproj|solutionrelative:shopon.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90D4C58-3048-4EBC-B0B0-A587F8C9CBD9}|ShoponConsoleApplication\\ShoponConsoleApplication.csproj|d:\\trainings_loki\\dot_net_training\\shopon\\shoponconsoleapplication\\shoponmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D90D4C58-3048-4EBC-B0B0-A587F8C9CBD9}|ShoponConsoleApplication\\ShoponConsoleApplication.csproj|solutionrelative:shoponconsoleapplication\\shoponmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderADORepository.cs",
+              "DocumentMoniker": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.ADO\\OrderADORepository.cs",
+              "RelativeDocumentMoniker": "Shopon.ADO\\OrderADORepository.cs",
+              "ToolTip": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.ADO\\OrderADORepository.cs",
+              "RelativeToolTip": "Shopon.ADO\\OrderADORepository.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T06:08:21.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductADORepository.cs",
+              "DocumentMoniker": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.ADO\\ProductADORepository.cs",
+              "RelativeDocumentMoniker": "Shopon.ADO\\ProductADORepository.cs",
+              "ToolTip": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.ADO\\ProductADORepository.cs",
+              "RelativeToolTip": "Shopon.ADO\\ProductADORepository.cs",
+              "ViewState": "AgIAAAABAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T06:08:04.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShoponMain.cs",
+              "DocumentMoniker": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\ShoponConsoleApplication\\ShoponMain.cs",
+              "RelativeDocumentMoniker": "ShoponConsoleApplication\\ShoponMain.cs",
+              "ToolTip": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\ShoponConsoleApplication\\ShoponMain.cs",
+              "RelativeToolTip": "ShoponConsoleApplication\\ShoponMain.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T09:20:01.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.WebApp\\Program.cs",
+              "RelativeDocumentMoniker": "Shopon.WebApp\\Program.cs",
+              "ToolTip": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.WebApp\\Program.cs",
+              "RelativeToolTip": "Shopon.WebApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T09:19:32.023Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

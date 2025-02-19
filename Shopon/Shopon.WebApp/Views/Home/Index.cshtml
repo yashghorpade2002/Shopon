@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Shopon.Common.Models.Product>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/images/banners/B1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/images/banners/B2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/images/banners/B3.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        @if(Model.Count() == 0)
+        {
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <label class="text-danger">No product(s) in cart!</label>
+                    </div>
+                </div>
+            </div>
+        }else
+        {
+            @foreach (var product in Model)
+            {
+                <div class="col-md-3 col-sm-12">
+                    <div class="card text-center my-2">
+                        <div class="card-body">
+                            <a asp-controler="Home" asp-action="Details" asp-route-pid="@product.Id">
+                                <img src="~/@Url.Content(product.ImageUrl)" alt="@product.Name" />
+                            </a>
+                            <h4>
+                                <label>@product.Name</label>
+                            </h4>
+                            <p>
+                                <span class="inr"></span>
+                                <label class="price">@product.Price</label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        
+    </div>
+    <nav aria-label="Page navigation" style="text-align: right; margin-top: 20px;">
+        <ul class="pagination justify-content-end">
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+                <li class="page-item @(ViewBag.CurrentPage == i ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

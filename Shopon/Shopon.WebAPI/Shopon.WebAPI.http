@@ -1,0 +1,6 @@
+@Shopon.WebAPI_HostAddress = http://localhost:5128
+
+GET {{Shopon.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

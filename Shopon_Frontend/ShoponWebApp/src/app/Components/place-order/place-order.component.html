@@ -1,0 +1,32 @@
+<div class="d-flex align-items-center mx-2">
+    <input type="text" placeholder="Search products..."  
+           [(ngModel)]="searchKey" 
+           (keyup.enter)="onSearch(searchKey)" 
+           class="form-control me-2" /> 
+    <button type="button" (click)="onSearch(searchKey)" class="btn btn-primary">Search</button>
+</div>
+<div class="container mt-4">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- <div *ngIf="errorMessage" class="alert alert-danger">{{errormessage}}</div> -->
+            <div *ngIf="!products.length" class="alert alert-warning">No products available!</div>
+            
+            <div *ngFor="let product of products" class="col-md-3 col-sm-12">
+                <div class="card text-center my-2">
+                    <div class="card-body">
+                        <a [routerLink]="['/details', product.id]">
+                            <img [src]="'/assets/' + product.imageUrl" alt="{{ product.name }}" />
+                        </a>
+                        <h4>
+                            <label>{{ product.name }}</label>
+                        </h4>
+                        <p>
+                            <span class="inr"></span>
+                            <label class="price">{{ product.price }}</label> <!-- Format price -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

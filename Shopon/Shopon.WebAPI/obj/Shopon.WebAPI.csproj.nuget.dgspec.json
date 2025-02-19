@@ -1,0 +1,470 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.WebAPI\\Shopon.WebAPI.csproj": {}
+  },
+  "projects": {
+    "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.ADO\\Shopon.ADO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.ADO\\Shopon.ADO.csproj",
+        "projectName": "Shopon.ADO",
+        "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.ADO\\Shopon.ADO.csproj",
+        "packagesPath": "C:\\Users\\ghorpade_y\\.nuget\\packages\\",
+        "outputPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.ADO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ghorpade_y\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\Shopon.Common.csproj": {
+                "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\Shopon.Common.csproj"
+              },
+              "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Data\\Shopon.Data.csproj": {
+                "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Data\\Shopon.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Business\\Shopon.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Business\\Shopon.Business.csproj",
+        "projectName": "Shopon.Business",
+        "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Business\\Shopon.Business.csproj",
+        "packagesPath": "C:\\Users\\ghorpade_y\\.nuget\\packages\\",
+        "outputPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ghorpade_y\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\Shopon.Common.csproj": {
+                "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\Shopon.Common.csproj"
+              },
+              "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Data\\Shopon.Data.csproj": {
+                "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Data\\Shopon.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\Shopon.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\Shopon.Common.csproj",
+        "projectName": "Shopon.Common",
+        "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\Shopon.Common.csproj",
+        "packagesPath": "C:\\Users\\ghorpade_y\\.nuget\\packages\\",
+        "outputPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ghorpade_y\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Data\\Shopon.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Data\\Shopon.Data.csproj",
+        "projectName": "Shopon.Data",
+        "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Data\\Shopon.Data.csproj",
+        "packagesPath": "C:\\Users\\ghorpade_y\\.nuget\\packages\\",
+        "outputPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ghorpade_y\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\Shopon.Common.csproj": {
+                "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\Shopon.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.EF\\Shopon.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.EF\\Shopon.EF.csproj",
+        "projectName": "Shopon.EF",
+        "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.EF\\Shopon.EF.csproj",
+        "packagesPath": "C:\\Users\\ghorpade_y\\.nuget\\packages\\",
+        "outputPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.EF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ghorpade_y\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\Shopon.Common.csproj": {
+                "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\Shopon.Common.csproj"
+              },
+              "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Data\\Shopon.Data.csproj": {
+                "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Data\\Shopon.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.WebAPI\\Shopon.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.WebAPI\\Shopon.WebAPI.csproj",
+        "projectName": "Shopon.WebAPI",
+        "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.WebAPI\\Shopon.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\ghorpade_y\\.nuget\\packages\\",
+        "outputPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.WebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ghorpade_y\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.ADO\\Shopon.ADO.csproj": {
+                "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.ADO\\Shopon.ADO.csproj"
+              },
+              "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Business\\Shopon.Business.csproj": {
+                "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Business\\Shopon.Business.csproj"
+              },
+              "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\Shopon.Common.csproj": {
+                "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Common\\Shopon.Common.csproj"
+              },
+              "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Data\\Shopon.Data.csproj": {
+                "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.Data\\Shopon.Data.csproj"
+              },
+              "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.EF\\Shopon.EF.csproj": {
+                "projectPath": "D:\\Trainings_Loki\\DOT_NET_TRAINING\\Shopon\\Shopon.EF\\Shopon.EF.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNet.Cors": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

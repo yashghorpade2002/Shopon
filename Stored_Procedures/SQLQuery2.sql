@@ -1,0 +1,1 @@
+EXEC [dbo].sp_getProductsById 1;

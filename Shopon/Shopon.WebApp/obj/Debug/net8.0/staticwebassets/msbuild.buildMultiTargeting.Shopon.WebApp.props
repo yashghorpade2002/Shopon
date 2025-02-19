@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Shopon.WebApp.props" />
+</Project>

@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div *ngIf="errorMessage" class="col">
+            <label class="text-danger">{{ errorMessage }}</label>
+        </div>
+        <div *ngIf="product" class="col-md-6 col-sm-12">
+            <img [src]="'/assets/' + product.imageUrl" alt="{{ product.name }}" class="img-fluid" />
+        </div>
+        <div *ngIf="product" class="col-md-6 col-sm-12">
+            <h3>{{ product.name }}</h3>
+            <p>
+                <span class="inr"></span>
+                <label class="price">{{ product.price}}</label>
+            </p>
+            <label class="my-2">Company: {{ product.company?.companyName }}</label>
+            <br />
+            <label class="my-2">Category: {{ product.categories?.category_Name }}</label>
+            <div class="my-4">
+                <button (click)="addToCart()" class="btn btn-outline-dark">Add to Cart</button> 
+                <a class="btn btn-outline-danger mx-3">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr />
+<a routerLink="/" class="btn btn-outline-primary my-3 mx-3">Continue Shopping</a>

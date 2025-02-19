@@ -1,0 +1,165 @@
+﻿@model IEnumerable<Shopon.WebApp.Models.CartVM>
+@{
+    ViewData["Title"] = "ViewCartDetails";
+}
+
+@if (Model == null || Model.Count() <= 0)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label class="text-danger">No product(s) in cart!</label>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container">
+        <div class="row">
+            <h4>My Cart(@Model.Count())</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <div class="cart-bg">
+                    @foreach (var cartVM in Model)
+                    {
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="~/@Url.Content(cartVM.ImageUrl)" class="cart-product-img" />
+                            </div>
+                            <div class="col-8">
+                                <h5>@cartVM.Name</h5>
+                                <label>Price:</label>
+                                <span class="inr"></span>
+                                <label class="cart-price">@cartVM.Price</label>
+                                <div>
+                                    <label>Qty:</label>
+                                    <input type="number" class="form-control-sm" value="@cartVM.Qty" min="1" max="5" data-id="@cartVM.Id" onchange="calculateAmount(@cartVM.Price)" />
+                                    <button class="btn btn-sm btn-outline-danger btn-remove" data-id="@cartVM.Id">Remove</button>
+                                </div>
+
+                                <div class="text-end">
+                                    <label>Total:</label>
+                                    <span class="inr"></span>
+                                    <label class="price cartAmount" id="amount_@cartVM.Id">@cartVM.Amount</label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    }
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="cart-bg">
+                    <div class="row">
+                        <div class="col">
+                            <h4>Cart Total</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="text-black">Item(s) Count:</label>
+                        </div>
+                        <div class="col-6 text-end">
+                            <label class="text-black">@Model.Count()</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="text-black">Total Amount:</label>
+                        </div>
+                        <div class="col-6 text-end">
+                            <label class="text-black" id="orderTotal">0.00</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col">
+                        <a class="btn btn-outline-secondary"
+                        asp-controller="Order"
+                        asp-action="PlaceOrder">Place Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<hr />
+<a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">Continue Shopping</a>
+
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $(".btn-remove").click(removeCartItem);
+            $(".form-control-sm").change(updateCartQuantity);
+            calculateOrderTotal();
+
+            var errorMessage = '@TempData["Error"]';
+            if (errorMessage) {
+                showSnackbar(errorMessage);
+            }
+        });
+
+        function showSnackbar(message) {
+            var snackbar = document.getElementById("snackbar");
+            snackbar.textContent = message;
+            snackbar.className = "show";
+            setTimeout(function () {
+                snackbar.className = snackbar.className.replace("show", "");
+            }, 10000);
+        }
+
+        function calculateAmount(price) {
+            let qty = $(event.target).val();
+            let id = $(event.target).data('id');
+            let amount = qty * price;
+            $("#amount_" + id).text(amount);
+
+            calculateOrderTotal();
+        }
+
+        function calculateOrderTotal() {
+            let total = 0;
+            $(".cartAmount").each(function (i, x) {
+                total += parseFloat(x.innerText);
+            })
+            $("#orderTotal").text(total);
+        }
+
+        function removeCartItem() {
+            let id = $(event.target).data('id');
+            var userchoice = confirm("Are you sure you want to remove the product from cart?");
+            if (userchoice) {
+                window.location.href = '@Url.Action("RemoveFromCart", "Cart")/' + id;
+                //Cart/RemoveFromCart/2
+            }
+        }
+
+        function updateCartQuantity() {
+            let qty = $(event.target).val();
+            let id = $(event.target).data('id');
+            $(event.target).val(qty);
+
+            updateQuantityOnServer(id, qty);
+        }
+
+
+        function updateQuantityOnServer(id, qty) {
+            $.ajax({
+                url: '@Url.Action("UpdateCartQuantity", "Cart")',
+                type: 'POST',
+                data: {
+                    id: id,
+                    qty: qty
+                }
+
+            });
+        }
+
+    </script>
+}
+
+<div id="snackbar"></div>

@@ -1,0 +1,15 @@
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\bin\Debug\net8.0\Shopon.Data.deps.json
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\bin\Debug\net8.0\Shopon.Data.dll
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\bin\Debug\net8.0\Shopon.Data.pdb
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\bin\Debug\net8.0\Shopon.Common.dll
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\bin\Debug\net8.0\Shopon.Common.pdb
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\obj\Debug\net8.0\Shopon.Data.csproj.AssemblyReference.cache
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\obj\Debug\net8.0\Shopon.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\obj\Debug\net8.0\Shopon.Data.AssemblyInfoInputs.cache
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\obj\Debug\net8.0\Shopon.Data.AssemblyInfo.cs
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\obj\Debug\net8.0\Shopon.Data.csproj.CoreCompileInputs.cache
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\obj\Debug\net8.0\Shopon.D.55A05B0F.Up2Date
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\obj\Debug\net8.0\Shopon.Data.dll
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\obj\Debug\net8.0\refint\Shopon.Data.dll
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\obj\Debug\net8.0\Shopon.Data.pdb
+D:\Trainings_Loki\DOT_NET_TRAINING\Shopon\Shopon.Data\obj\Debug\net8.0\ref\Shopon.Data.dll
