@@ -36,3 +36,8 @@ The System Design of the application 👇 <hr>
 <hr> The Final Order screen to get all the orders and sum total 👇 <hr>
 
 ![image](https://github.com/user-attachments/assets/12251662-5634-40c7-86cc-121c9a5f78ef)
+
+<hr> Created the swagger based api documentation and also modified for CORS 👇<hr>
+
+![image](https://github.com/user-attachments/assets/2f9ed2c6-8040-46bb-8750-70e68afb0ba1)
+
